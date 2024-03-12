@@ -1,9 +1,4 @@
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
-      {
-        "userId"; 1,
-        "id"; 1,
-        "title"; "delectus aut autem",
-        "completed"; false
-      }
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(users => console.log(users))
+  .catch(error => console.error('Erro:', error));

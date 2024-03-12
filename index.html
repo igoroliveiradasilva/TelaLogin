@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu login!</title>
 </head>
 <body>
-    <form action="database" method="GET">
+    <form id="loginForm" action="database" method="GET">
         <label for="loginNome">Nome:</label>
         <br>
         <input id="loginNome" name="loginNome" type="text" required pattern="[a-zA-Z0-9]+" >
@@ -16,9 +16,9 @@
         <input id="loginSenha" name="loginSenha" type="password" required minlength="8" maxlength="15">
         <br>
         <input type="submit" value="Submit">
-        </form>
+    </form>
 
-        <script src="getUsers.js"></script>
-        <script src="index.js"></script>
+    <script src="getUsers.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
